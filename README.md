@@ -13,7 +13,7 @@ The user would expect to see relevant information that would be pertinant in an 
 
 
 
-Proposed Features: 
+## Proposed Features: 
 * Works across Multiple Offices
 * Set off action plans (eg. Code Blue, Code Red) to allow for various items
 	* Contacte a specified list of people in slack, text messages, emails etc. 
@@ -28,5 +28,13 @@ Proposed Features:
 * Family based contact codes
 * Stats for number of emergencies etc. 
 * 
+
+## Structure: 
+* Root - Root of project contains the following
+    * app folder - contains the python app
+    * server folder - contains the app server files
+    * docker-compose.yml - used to glue together docker images
+    * setup.sh - the set up script
+
 
 

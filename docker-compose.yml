@@ -1,0 +1,35 @@
+version: '3'
+
+services: 
+    server: 
+      container_name: nginx
+      build: 
+        context: /server/
+        dockerfile: /server/Dockerfile
+      ports:
+        #host|container
+        - 80:80
+      depends_on: 
+        - app
+    
+     app:
+      container_name: app
+      build:
+          context: /app/
+          dockerfile: /app/Dockerfile
+      #env_file: /database.conf
+      expose:
+          - 8080
+      depends_on:
+      # - database
+
+#     #TODO Add database
+#     database: 
+#       container_name: 
+#       image:
+#       env_file:
+#       ports:
+#       #  -
+#       volumes:
+# volumes:
+#   db_volumes:
