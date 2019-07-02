@@ -36,5 +36,12 @@ The user would expect to see relevant information that would be pertinant in an 
     * docker-compose.yml - used to glue together docker images
     * setup.sh - the set up script
 
+## Running the Example App:
+* Navigate to the app directory and build the docker container with the following command:
+    * `docker build -t hellothere .`
+* Run the docker container with the following command:
+    * `docker run -it --rm -p 127.0.0.1:8888:8080/tcp --name hellothererunning hellothere`
+    * You should be able to navigate to <a href=127.0.0.1:8888> 127.0.0.1:8080 </a> and see the running app. 
+
 
 

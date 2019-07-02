@@ -27,6 +27,8 @@ if [ $docker_permissions -ne 0 ]
             'Example: `sudo usermod -aG docker $(whoami)`'
 fi
 
+#TODO write script to build and run the docker images
+# docker build -t hellothere .
+# docker run -it --rm -p 127.0.0.1:8888:8080/tcp --name hellothererunning hellothere
 
-#docker run --name some-nginx -d -p 
 

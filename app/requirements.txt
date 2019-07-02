@@ -1,0 +1,3 @@
+#This file ensures all app dependencies are installed in our container app. 
+
+Flask>=1.0
