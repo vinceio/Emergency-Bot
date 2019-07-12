@@ -8,7 +8,8 @@ services:
         dockerfile: /server/Dockerfile
       ports:
         #host|container
-        - 80:80
+        - 8008:80
+        - 443344:443
       depends_on: 
         - app
     
